@@ -1,0 +1,12 @@
+p {
+  display: inline;
+}
+.copyDiv {
+  text-align: center;
+  border: 1px solid black;
+}
+.box__shadow {
+  width: 80vw;
+  height: 50px;
+  margin: 20px auto;
+}
