@@ -26,6 +26,12 @@
         <img width="10" src="./img/icon-copy.svg" />
       </button>
     </div>
+    <div class="copyDiv">
+      <p>top: 50%; left: 50%; transform: translate(-50%, -50%);</p>
+      <button class="copyButton">
+        <img width="10" src="./img/icon-copy.svg" />
+      </button>
+    </div>
     <!--  -->
     <div
       style="box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5)"
@@ -81,6 +87,52 @@
         255, 0.3);
       </p>
     </div>
-    <script src="./js/copy_text.js"></script>
+    <div class="transform__box">
+      <div>
+        <div></div>
+        <p>transform: none;</p>
+      </div>
+      <div>
+        <div></div>
+        <p>translate(-100%, -100%)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>translate(100%, 100%)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>translate(100%, -100%)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>translate(-100%, 100%)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>skew(20deg, 10deg)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>rotate(45deg) scale(0.5)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>scale(1.5, 1.2)</p>
+      </div>
+      <div>
+        <div></div>
+        <p>scale(-1, 1)</p>
+      </div>
+    </div>
+    <p>Стандартний розмір шрифта для <body> в браузерах зазвичай становить 16px або 1em. </p>
+      <p>, 1em буде також рівним 16px. Якщо встановлено font-size: 1.2em;, то розмір шрифту буде 1.2 разу більшим за розмір шрифту батьківського елемента. </p>
+    <div class="Password_Visibility">
+      <img src="./img/icons8-see-no-evil-monkey-94.png" alt="Show Password" id="showPasswordToggle">
+      <p>enter password:</p>  
+      <input type="password" id="passwordField">
+    </div>
+      <script src="./js/Password_Visibility.js"></script>
+      <script src="./js/copy_text.js"></script>
   </body>
 </html>

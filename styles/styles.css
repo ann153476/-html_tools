@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 p {
   display: inline;
+  margin: 1vw 0;
 }
 .copyDiv {
   text-align: center;
@@ -9,4 +14,76 @@ p {
   width: 80vw;
   height: 50px;
   margin: 20px auto;
+}
+/*  */
+.transform__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.8vw;
+  margin: 2vw;
+}
+.transform__box > div {
+  position: relative;
+  border: 0.1vw solid black;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transform__box div:not(.transform__box > div) {
+  width: 10vw;
+  height: 10vw;
+}
+.transform__box div:nth-child(1) div {
+  transform: none;
+  background-color: rgb(255, 8, 8);
+}
+.transform__box div:nth-child(2) div {
+  transform: translate(-100%, -100%);
+  background-color: rgb(255, 149, 0);
+}
+.transform__box div:nth-child(3) div {
+  transform: translate(100%, 100%);
+  background-color: rgb(242, 255, 0);
+}
+.transform__box div:nth-child(4) div {
+  transform: translate(100%, -100%);
+  background-color: rgb(26, 255, 0);
+}
+.transform__box div:nth-child(5) div {
+  transform: translate(-100%, 100%);
+  background-color: rgb(0, 255, 195);
+}
+.transform__box div:nth-child(6) div {
+  transform: skew(20deg, 10deg);
+  background-color: rgb(17, 0, 255);
+}
+.transform__box div:nth-child(7) div {
+  transform: rotate(45deg) scale(0.5);
+  background-color: rgb(191, 0, 255);
+}
+.transform__box div:nth-child(8) div {
+  transform: scale(1.5, 1.2);
+  background-color: rgb(255, 0, 208);
+}
+.transform__box div:nth-child(9) div {
+  transform: scale(-1, 1);
+  background-image: url(../img/88d03c32c67a6f0de65116c95fe453d2.jpg);
+  background-size: cover;
+}
+.transform__box p {
+  position: absolute;
+  bottom: 5%;
+}
+/* Password_Visibility */
+.Password_Visibility {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2vw 0;
+}
+.Password_Visibility img {
+  width: 20vw;
+  height: 20vw;
 }
